@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("jetAirwaysFile.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/Ashish/git/Jet-Airways/jetAirways/src/main/java/features/jetAirwaysFile.feature");
 formatter.feature({
   "comments": [
     {
@@ -74,14 +74,14 @@ formatter.feature({
       "value": "#Sample Feature Definition Template"
     }
   ],
-  "line": 19,
+  "line": 20,
   "name": "Jet Airways functionality",
   "description": "",
   "id": "jet-airways-functionality",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "line": 21,
+  "line": 22,
   "name": "Jet Airways scenario",
   "description": "",
   "id": "jet-airways-functionality;jet-airways-scenario",
@@ -89,24 +89,69 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 22,
+  "line": 23,
   "name": "user opens browser",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 23,
-  "name": "user enters username and password",
+  "line": 24,
+  "name": "user logins to the application",
   "keyword": "When "
 });
 formatter.step({
-  "line": 24,
-  "name": "user can login",
+  "line": 25,
+  "name": "user can directly checks flight details",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 26,
+  "name": "user clicks on Return,OnWay , MultiCity option",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 25,
-  "name": "user should be on homepage",
+  "line": 27,
+  "name": "user enters fromCity and toCity",
   "keyword": "Then "
+});
+formatter.step({
+  "line": 28,
+  "name": "user enters departDate and ReturnDate",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 29,
+  "name": "user enters number of passengrs",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 30,
+  "name": "user enters cash mode",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 31,
+  "name": "user clicks on search flight button",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 formatter.match({});
 formatter.result({

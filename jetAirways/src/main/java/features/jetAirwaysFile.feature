@@ -16,10 +16,16 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
+
 Feature: Jet Airways functionality
 
   Scenario: Jet Airways scenario
     Given user opens browser
-    When user enters username and password
-    Then user can login
-    Then user should be on homepage
+    When user logins to the application
+    And user can directly checks flight details
+    Then user clicks on Return,OnWay , MultiCity option
+    Then user enters fromCity and toCity
+    Then user enters departDate and ReturnDate
+    Then user enters number of passengrs
+    Then user enters cash mode
+    Then user clicks on search flight button

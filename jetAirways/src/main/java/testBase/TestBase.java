@@ -2,6 +2,7 @@ package testBase;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -17,15 +18,20 @@ public class TestBase {
 		prop=new Properties();
 		try {
 			FileInputStream fis=new FileInputStream("C:\\Users\\Ashish\\eclipse-workspace\\jetAirways\\src\\main\\java\\config\\config.properties");
+			 prop.load(fis);
 		} catch (FileNotFoundException e) {
 			
 			e.printStackTrace();
 		}
 		
+	 catch (IOException e) {
+		e.printStackTrace();
+	}
 		
 	}
 	
-	public void initialization(String browser) {
+	public static void initialization() {
+		String browser= prop.getProperty("browser");
 		if(browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver","C:\\Users\\Ashish\\Desktop\\Drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
