@@ -10,8 +10,9 @@ import testBase.TestBase;
 @CucumberOptions(features="C:\\Users\\Ashish\\git\\Jet-Airways\\jetAirways\\src\\main\\java\\features\\jetAirwaysFile.feature",
 				 glue="C:\\Users\\Ashish\\git\\Jet-Airways\\jetAirways\\src\\main\\java\\stepDefinition\\HomePageStepDefinition.java",
 //				 format= {"pretty", "html:test-output"},
-				 monochrome=true
-//				 dryRun=false
+				 monochrome=true,
+				 dryRun=true,
+				 strict=true
 
 		)
 public class TestRunner extends TestBase{
