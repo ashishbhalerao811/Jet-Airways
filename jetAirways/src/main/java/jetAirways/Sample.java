@@ -14,11 +14,11 @@ public class Sample {
 		/*
 		 * buttons=
 		 * return----.//*[@id='Return']
-		 * oneWway---.//*[@id='OneWay']
+		 * oneWay---.//*[@id='OneWay']
 		 * multiWay--.//*[@id='ObeFlights1_lnkMultipleDests']
 		 * fromCity---.//*[@id='ObeFlights1_autoOriginHome_AutoText']
 		 * destCity---.//*[@id='ObeFlights1_autoDestinationHome_AutoText']
-		 * depart----.//*[@id='txtStartDate']
+		 * departDate----.//*[@id='txtStartDate']
 		 * 2months ---.//*[@id='departureCalendar']/div
 		 * if(month.equalsIgnoreCase("December")){
 
