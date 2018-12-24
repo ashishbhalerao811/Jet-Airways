@@ -25,23 +25,18 @@ public class HomePage extends TestBase{
 	WebElement returnBtn;
 	
 	@FindBy(xpath=".//*[@id='OneWay']")
-	static
 	WebElement oneWay;
 	
 	@FindBy(xpath=".//*[@id='ObeFlights1_lnkMultipleDests']")
-	static
 	WebElement multiWay;
 	
 	@FindBy(xpath=".//*[@id='ObeFlights1_autoOriginHome_AutoText']")
-	static
 	WebElement fromCity;
 	
 	@FindBy(xpath=".//*[@id='ObeFlights1_autoDestinationHome_AutoText']")
-	static
 	WebElement destCity;
 	
 	@FindBy(xpath=".//*[@id='txtStartDate']")
-	static
 	WebElement departDate;
 	
 	@FindBy(xpath=".//*[@id='departureCalendar']/div")
@@ -65,7 +60,6 @@ public class HomePage extends TestBase{
 	WebElement cash;
 	
 	@FindBy(xpath=".//*[@id='txtPromotion']")
-	static
 	WebElement promo;
 	
 	@FindBy(xpath=".//a[contains(text(),'Login')]")
@@ -92,11 +86,11 @@ public class HomePage extends TestBase{
 		returnBtn.click();
 	}
 	
-	public static void oneWaySelection() {
+	public void oneWaySelection() {
 		oneWay.click();
 	}
 	
-	public static void twoWaySelection() {
+	public void twoWaySelection() {
 		multiWay.click();
 	}
 	
@@ -108,7 +102,7 @@ public class HomePage extends TestBase{
 		destCity.sendKeys("Mumbai");
 	}
 	
-	public static void clickOnDate() {
+	public void clickOnDate() {
 		departDate.click();
 		List<WebElement>list=driver.findElements(By.xpath("twoMonthsCalendar"));
 		int count=list.size();
@@ -123,25 +117,25 @@ public class HomePage extends TestBase{
 		}
 	}
 	
-	public static void passengerList() {
+	public void passengerList() {
 		NumberOfPassengers.click();
 	}
 	
-	public static void clickOnCash() {
+	public void clickOnCash() {
 		cash.click();
 	}
 	
-	public static void clickOnPromotionOption() {
+	public void clickOnPromotionOption() {
 		promo.click();
 	}
 	
-	public static void userLogin(String uName, String passWord) {
+	public void userLogin(String uName, String passWord) {
 		email.sendKeys(prop.getProperty(uName));
 		pWd.sendKeys(prop.getProperty(passWord));
 		loginBtn.click();
 	}
 	
-	public static void clickOnFlightBtn() {
+	public  void clickOnFlightBtn() {
 		clickOnFlight.click();
 	}
 	
