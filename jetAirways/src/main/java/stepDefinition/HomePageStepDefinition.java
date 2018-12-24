@@ -8,8 +8,8 @@ import testBase.TestBase;
 
 public class HomePageStepDefinition extends TestBase{
 	
-	public static TestBase testBase;
-	public static HomePage homePage;
+	public TestBase testBase;
+	public HomePage homePage = new HomePage();
 	public static HomePageStepDefinition homePageStepDefinition;
 	
 	@Given("^user opens browser$")
@@ -37,7 +37,7 @@ public class HomePageStepDefinition extends TestBase{
 	public void user_enters_fromCity_and_toCity() throws Throwable {
 		homePageStepDefinition=new HomePageStepDefinition();
 		
-		homePage=new HomePage();
+	
 		homePage.departureCity();
 		homePage.destinationCity();
 	}

@@ -12,7 +12,7 @@ import testBase.TestBase;
 
 public class HomePage extends TestBase{
 	public static WebDriver driver;
-	public static TestBase testBase;
+	public TestBase testBase;
 	
 	
 	public HomePage() {
@@ -21,7 +21,7 @@ public class HomePage extends TestBase{
 	}
 	
 	@FindBy(xpath=".//*[@id='Return']")
-	static
+	
 	WebElement returnBtn;
 	
 	@FindBy(xpath=".//*[@id='OneWay']")
@@ -57,11 +57,11 @@ public class HomePage extends TestBase{
 	WebElement next;
 	
 	@FindBy(xpath=".//*[@id='noOfTravellers']")
-	static
+	
 	WebElement NumberOfPassengers;
 	
 	@FindBy(xpath=".//*[@id='ObeFlights1_spanPaySelectIcon']")
-	static
+	
 	WebElement cash;
 	
 	@FindBy(xpath=".//*[@id='txtPromotion']")
@@ -72,23 +72,23 @@ public class HomePage extends TestBase{
 	WebElement login;
 	
 	@FindBy(xpath=".//*[@id='txtHeaderJPNumber']")
-	static
+	
 	WebElement email;
 	
 	@FindBy(xpath=".//*[@id='txtHeaderPassword']")
-	static
+	
 	WebElement pWd;
 	
 	@FindBy(xpath=".//*[@id='Login_btnSubmitLogin']")
-	static
+	
 	WebElement loginBtn;
 	
 	@FindBy(xpath=".//*[@id='ObeFlights1_btnBookOnline']")
-	static
+	
 	WebElement clickOnFlight;
 	
 	
-	public static void departSelection() {
+	public void departSelection() {
 		returnBtn.click();
 	}
 	
@@ -100,11 +100,11 @@ public class HomePage extends TestBase{
 		multiWay.click();
 	}
 	
-	public static void departureCity() {
+	public void departureCity() {
 		fromCity.sendKeys("Pune");
 	}
 	
-	public static void destinationCity() {
+	public void destinationCity() {
 		destCity.sendKeys("Mumbai");
 	}
 	
