@@ -10,6 +10,7 @@ public class HomePageStepDefinition extends TestBase{
 	
 	public TestBase testBase;
 	public HomePage homePage = new HomePage();
+	
 	public static HomePageStepDefinition homePageStepDefinition;
 	
 	@Given("^user opens browser$")

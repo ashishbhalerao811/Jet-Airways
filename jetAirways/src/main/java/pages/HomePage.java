@@ -11,6 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 import testBase.TestBase;
 
 public class HomePage extends TestBase{
+	
 	public static WebDriver driver;
 	public TestBase testBase;
 	
